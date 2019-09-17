@@ -19,6 +19,10 @@
   color: white;
 }
 
+body {
+  height: 100vh;
+}
+
 .quiz_background_color {
   background-color: #23293f;
 }

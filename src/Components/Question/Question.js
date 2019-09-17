@@ -20,10 +20,8 @@ const Question = () => (
         
         </div>
         <hr style={ line_design }></hr>
-
-        <p>What does CSS stand for?</p>
+        <p>What does CSS stand for? </p> 
     </div>
-
   )
 
   export default Question;
