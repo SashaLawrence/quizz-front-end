@@ -5,6 +5,7 @@ import Quiz from'../Quiz/Quiz.js';
 function App() {
   return (
     <>
+      <Start />
       <Quiz />
     </>
   );

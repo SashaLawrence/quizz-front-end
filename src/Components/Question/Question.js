@@ -13,6 +13,10 @@ const line_design = {
 
 const Question = () => (
 
+
+    // map over the quiz array
+    // Send GET request for first item (eg. question id 1)
+
     <div style={ font_color } className="mt-5 mb-4">
         <div className="d-flex justify-content-between">
             <h5>1/20</h5>

@@ -10,7 +10,7 @@ margin: "0 -15px"
 }
 
 
-const Header = () => (
+const Header = ( {category} ) => (
 
     <div style={ header_background_color } className="page-header">
       <h5 style={ font_color } className="card-header">CSS</h5>
