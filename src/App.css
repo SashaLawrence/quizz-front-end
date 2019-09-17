@@ -19,6 +19,10 @@
   color: white;
 }
 
+.quiz_background_color {
+  background-color: #23293f;
+}
+
 .App-link {
   color: #61dafb;
 }
