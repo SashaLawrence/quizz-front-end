@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header/Header";
-import Question from "../Question/Question";
-import Answers from "../Answers/Answers";
+
+import Question from "../Question";
+import Answers from "../Answer/Answer1";
 import Footer from "../Footer/Footer";
 //import Complete from "../Complete/Complete";
 
@@ -13,11 +13,7 @@ let Quiz = () => (
     // recieve an array of question ids
     // save to store.js
     
-
-
-
     <>
-        <Header />
         <Question />
         <Answers />
         <Footer /> */
