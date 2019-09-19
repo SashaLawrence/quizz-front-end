@@ -1,7 +1,7 @@
 import React from "react";
 
 import Question from "../Question";
-import Answers from "../Answer/Answer1";
+import Answers from "../Answers";
 import Footer from "../Footer/Footer";
 //import Complete from "../Complete/Complete";
 
