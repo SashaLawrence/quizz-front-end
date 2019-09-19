@@ -15,10 +15,3 @@ export const startQuiz = () => {
 
 
 
-// export const getQuestion = () => {
-//     return (dispatch, getState)  => {
-//         const counter = getState().counter;
-//         const quiz = getState().quiz;
-//         dispatch(increment()); // save the response with question and answers to local state
-//     }           
-// }
