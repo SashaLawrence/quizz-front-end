@@ -5,6 +5,11 @@ const start =  state => ({
     start: true,
 })
 
+const increment = state => ({
+    ...state,
+    qcounter: state.qcounter + 1,
+})
+
 
 
 
