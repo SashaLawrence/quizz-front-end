@@ -14,19 +14,19 @@ class Answers extends Component {
         }
         this.handleClick = this.handleClick.bind(this);
     }
-   
+
     handleClick(id) {
         this.setState (
             { selected: id,}
         )
     }
 
-
     render() {
         let { answers } = this.state;
         const marginB = {
         marginBottom: "1em"    
         }
+
 
         return (
             <div className="col-xs-6" style={ marginB }>
@@ -36,12 +36,13 @@ class Answers extends Component {
                      id={ answer.id }
                      value={ answer.answer }
                      correct= { answer.correct }
-                     handleClick ={() => this.handleClick(answer.id) }
+                     handleClick ={() => this.props.handleClick(answer.id) }
                      selected = { this.state.selected }
+                     
                      />
                 )}
             </div>
-            <
+    
         )
     }
 }

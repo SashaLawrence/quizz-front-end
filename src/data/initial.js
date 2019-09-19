@@ -48,8 +48,9 @@ const initial = {
         ]
     },
     
-    selected: false,
+    selected: null,
     start: false,
+    score: 0,
 
 };
 

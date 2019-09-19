@@ -24,6 +24,8 @@ class Answer extends Component {
             style.backgroundColor = "#cbdce6"; 
         }
 
+        
+
         return (
             <button 
                 onClick={ handleClick } 

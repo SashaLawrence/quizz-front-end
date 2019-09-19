@@ -9,3 +9,16 @@
         type: "start",
      }
  };
+
+ export const incrementScore = () => {
+     return {
+         type: "incrementScore"
+     }
+ }
+
+ export const selectAnswer = (id) => {
+     return {
+         type: "selectAnswer",
+         selected: id
+     }
+ }
