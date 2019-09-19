@@ -4,8 +4,9 @@
 //     };
 //  };
 
- export const start = () => {
-     return {
+ export const start = values => {
+    return {
         type: "start",
-     }
+        values,
+    }
  };
