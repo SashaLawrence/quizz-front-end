@@ -8,38 +8,40 @@ class Answers extends Component {
     constructor(props){
         super(props)
         this.state = {
-            selected: [],
+            selected: null,
             answers: this.props.answers,
           
         }
         this.handleClick = this.handleClick.bind(this);
     }
    
-    handleClick(index) {
-    let { answers } = this.state;
-    console.log(answers)
-    answers.map(answer => answer. ? 
-        
-            
+    handleClick(id) {
+        this.setState (
+            { selected: id,}
+        )
     }
 
+
     render() {
-    let { answers } = this.props;
-    const marginB = {
-    marginBottom: "1em"    
-    }
+        let { answers } = this.state;
+        const marginB = {
+        marginBottom: "1em"    
+        }
+
         return (
             <div className="col-xs-6" style={ marginB }>
-                { answers.map((answer, index) =>
+                { answers.map((answer) =>
                      <Answer 
-                     key={ index }
+                     key={ answer.id }
+                     id={ answer.id }
                      value={ answer.answer }
                      correct= { answer.correct }
-                     handleClick ={(e) => this.handleClick(e, index) }
+                     handleClick ={() => this.handleClick(answer.id) }
                      selected = { this.state.selected }
                      />
                 )}
             </div>
+            <
         )
     }
 }
