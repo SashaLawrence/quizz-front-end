@@ -33,7 +33,7 @@ const initial = {
     },
     
     selected: null,
-    start: true,
+    start: false,
     score: 0,
 
 };
