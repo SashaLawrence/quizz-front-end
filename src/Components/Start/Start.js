@@ -25,8 +25,8 @@ const buttonColour = {
 const Start = ( { startQuiz } ) => (
 
     <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
-        <img src={ code_background } alt="code logo" style={ imageSize } />
-        <button onClick={ startQuiz  } className="btn rounded-pill" style = { buttonColour } >START</button>
+        <img src={ code_background } alt="code " style={ imageSize } />
+        <button onClick={ startQuiz  } className="btn rounded-pill" style = { buttonColour } >Start Quiz</button>
     </div>
 );
 
