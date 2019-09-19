@@ -3,7 +3,7 @@ import React from "react";
 import Question from "../Question";
 import Answers from "../Answers";
 import Footer from "../Footer/Footer";
-//import Complete from "../Complete/Complete";
+import Complete from "../Complete/Complete";
 
 
 let Quiz = () => (
@@ -14,10 +14,10 @@ let Quiz = () => (
     // save to store.js
     
     <>
-        <Question />
+        {/* <Question />
         <Answers />
-        <Footer /> */
-       {/* <Complete />  */}
+        <Footer />  */}
+       <Complete /> 
     </>
 )
 

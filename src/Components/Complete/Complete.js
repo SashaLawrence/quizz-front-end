@@ -3,9 +3,10 @@ import trophy from "./trophy.svg"
 
 
 const imageSize = {
-    width: "40%",
-    height: "20%",
-    marginBottom: "1em"
+    width: "50%",
+    height: "30%",
+    marginBottom: "1em",
+    marginTop: "3em"
 }
 
 const congrats_box = {

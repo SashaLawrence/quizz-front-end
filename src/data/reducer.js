@@ -14,7 +14,7 @@ const incrementScore = state => ({
     score: state.score + 1,
 });
 
-const selectAnswer = ()
+// const selectAnswer = ()
 
 const reducer = (state, action) => {
     switch (action.type) {

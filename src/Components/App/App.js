@@ -9,6 +9,7 @@ function App( {start} ) {
     <>
       <Header />
       { start ? <Quiz /> : <Start /> }
+      <complete/>
     </>
   );
 }
