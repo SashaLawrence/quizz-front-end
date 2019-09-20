@@ -6,10 +6,11 @@ import { getQuestion } from "../../data/actions/api";
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-let mapStateToProps = ({ selected, timeout }) => {
+let mapStateToProps = ({ selected, timeout, correctAnswer }) => {
     return {
         selected: selected,
         timeout: timeout,
+        correctAnswer: correctAnswer,
     }
 };
 
