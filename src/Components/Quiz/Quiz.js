@@ -16,7 +16,7 @@ let Quiz = () => (
     <>
         <Question />
         <Answers />
-        <Footer /> */
+        <Footer /> 
        {/* <Complete />  */}
     </>
 )
