@@ -12,6 +12,7 @@ let mapStateToProps = ({ current, qcounter, selected }) => {
         question: current.question.question, 
         counter: qcounter,
         selected: selected,
+        
     }
 };
 

@@ -8,7 +8,6 @@ import Header from '../Header';
 function App( {start} ) {
   return (
     <>
-      <Header />
       { start ? <Quiz /> : <Start /> }
       {/* { qcounter > 20 ? <Complete/> : <Quiz /> } } */}
     </>

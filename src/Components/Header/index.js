@@ -1,9 +1,10 @@
 import { connect } from "react-redux"; // this allows us to interact with the store
 import Header from "./Header";
 
-let mapStateToProps = (state) => {
+let mapStateToProps = ( {current} ) => {
     return {
-    category: state.category,
+    category: current.question.category,
+  
     }
 };
 
