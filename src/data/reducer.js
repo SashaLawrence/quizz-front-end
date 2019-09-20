@@ -1,7 +1,6 @@
 const start = (state, { values }) => ({
     ...state,
-    start: true,
-    quiz: values
+    quiz: values,
 });
 
 const save = (state, { question, answers }) => ({
@@ -11,12 +10,16 @@ const save = (state, { question, answers }) => ({
         question: question,
         answers: answers,
     },
+    qcounter: state.qcounter + 1,
+    selected: state.selected = 0,
+    correctAnswer: state.correctAnswer = null,
+    start: true,
 });
 
-const next = state => ({
-    ...state,
-    qcounter: state.qcounter + 1,
-});
+// const next = state => ({
+//     ...state,
+//     qcounter: state.qcounter + 1,
+// });
 
 
 const selectedAnswer = (state, { id }) => ({
