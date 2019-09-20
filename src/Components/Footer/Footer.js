@@ -20,7 +20,6 @@ const Footer = ({ quiz, qcounter, handleClick, selected }) => (
             >Next</button>
         }
     </div>
+);
 
-)
-
-  export default Footer;
+export default Footer;
