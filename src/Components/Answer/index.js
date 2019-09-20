@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Answer extends Component {
 
     render() {
-        let { handleClick, value, correct, selected, id } = this.props;
+        let { handleClick, value, correct, selected, id, timeout } = this.props;
         const answerSelected = selected === id;
         const style = {}
 
@@ -18,6 +18,12 @@ class Answer extends Component {
         } else if (selected > 0 && correct) {
             style.backgroundColor = "#e78230";
             style.border = "2px solid green";
+        } else if (timeout && correct) {
+            style.backgroundColor = "#e78230";
+            style.border = "2px solid green";
+        } else if (timeout && !correct) {
+            style.border = "2px solid red";
+            style.backgroundColor = "#cbdce6";
         } else {
             style.backgroundColor = "#cbdce6";
         }

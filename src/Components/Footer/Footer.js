@@ -4,11 +4,11 @@ const unselected = {
     backgroundColor: "#cbdce6"
     }
 
-const Footer = ({ quiz, qcounter, handleClick, selected }) => (
+const Footer = ({ quiz, qcounter, handleClick, selected, timeout }) => (
 
      <div className="d-flex justify-content-between mb-4">
         <p className="text-success">Correct</p>
-        { selected === 0 ? null :
+        { !selected ? null :
             <button
                 style={ unselected }
                 type="button"
