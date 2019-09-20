@@ -10,7 +10,7 @@ function App( {start, qcounter} ) {
     <>
       <Header />
       { start ? <Quiz /> : <Start /> }
-      { qcounter === 20 ? <Complete/> : null }
+      {/* { qcounter === 20 ? <Complete/> : null } */}
     </>
   );
 }
