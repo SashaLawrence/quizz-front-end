@@ -3,9 +3,10 @@ import trophy from "./trophy.svg"
 
 
 const imageSize = {
-    width: "40%",
-    height: "20%",
-    marginBottom: "1em"
+    width: "50%",
+    height: "30%",
+    marginBottom: "1em",
+    marginTop: "3em"
 }
 
 const congrats_box = {
@@ -33,7 +34,7 @@ let Complete = () => (
             <h1 style={ score_color }>90% Score</h1>
             <h5>Quiz completed successfully</h5>
             <br></br>
-
+            
             <p>You attempted <b>20 questions</b> and answered <span style={ score_color }>18 correctly!</span></p>
 
         </div>
