@@ -17,11 +17,13 @@ class Answer extends Component {
             style.backgroundColor = "#cbdce6"; 
         } else if ( answerSelected && correct ) {
             style.backgroundColor = "#e78230";
+            style.border = "2px solid green";
         } else if ( answerSelected && !correct ) {
             style.border = "2px solid red";
             style.backgroundColor = "#cbdce6";
-        } else if ( !answerSelected && correct ) {
+        } else if ( selected > 0 && correct ) {
             style.backgroundColor = "#e78230";
+            style.border = "2px solid green";
         } else {
             style.backgroundColor = "#cbdce6"; 
         }
