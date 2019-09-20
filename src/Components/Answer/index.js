@@ -26,6 +26,10 @@ class Answer extends Component {
             style.backgroundColor = "#cbdce6";
         } else {
             style.backgroundColor = "#cbdce6";
+        };
+
+        if(selected > 0) { 
+            style.pointerEvents = "none";
         }
 
         return (
