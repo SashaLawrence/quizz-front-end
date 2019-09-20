@@ -5,16 +5,11 @@ import Quiz from "./Quiz";
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-let mapStateToProps = (state) => {
+let mapStateToProps = ( {qcounter} ) => {
     return {
-   
+   counter: qcounter,
     }
 };
 
-let mapDispatchToProps = (dispatch) => {
-    return {
-        
-    }
-};
  
-export default connect(mapStateToProps, mapDispatchToProps)(Quiz);
+export default connect(mapStateToProps)(Quiz);

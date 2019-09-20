@@ -11,7 +11,7 @@ const imageSize = {
 
 const congrats_box = {
     backgroundColor: "#cbdce6",
-    height: "50vh",
+    height: "70vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -26,16 +26,16 @@ const score_color = {
 }
 
 
-let Complete = () => (
+let Complete = ( {score, counter} ) => (
     <>
         <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
             <img src={ trophy } alt="Trophy" style={ imageSize } />
             <h4>Congratulations!</h4>
-            <h1 style={ score_color }>90% Score</h1>
+            <h1 style={ score_color }>{ score }/20</h1>
             <h5>Quiz completed successfully</h5>
             <br></br>
             
-            <p>You attempted <b>20 questions</b> and answered <span style={ score_color }>18 correctly!</span></p>
+            <p>You attempted <b>{ counter } questions</b> and answered <span style={ score_color }>{ score } correctly!</span></p>
 
         </div>
       

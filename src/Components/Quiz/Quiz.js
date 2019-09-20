@@ -3,21 +3,20 @@ import React from "react";
 import Question from "../Question";
 import Answers from "../Answers";
 import Footer from "../Footer";
+import Complete from "../Complete";
 //import Complete from "../Complete/Complete";
 
 
-let Quiz = () => (
+let Quiz = ( {counter} ) => console.log(counter) || (
 
-
-    // GET quiz 
-    // recieve an array of question ids
-    // save to store.js
-    
     <>
-        <Question />
-        <Answers />
-        <Footer /> 
-       {/* <Complete />  */}
+        { counter > 2 ? <Complete /> : 
+        <> 
+            <Question />
+            <Answers />
+            <Footer /> 
+        </>
+        } 
     </>
 )
 

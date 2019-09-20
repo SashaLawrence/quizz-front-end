@@ -1,16 +1,16 @@
 import React from 'react';
 import '../../App.css';
-import Quiz from'../Quiz/Quiz.js';
+import Quiz from'../Quiz';
 import Start from '../Start';
 import Header from '../Header';
-import Complete from "../Complete/Complete";
 
-function App( {start, qcounter} ) {
+
+function App( {start} ) {
   return (
     <>
       <Header />
       { start ? <Quiz /> : <Start /> }
-      {/* { qcounter === 20 ? <Complete/> : null } */}
+      {/* { qcounter > 20 ? <Complete/> : <Quiz /> } } */}
     </>
   );
 }
