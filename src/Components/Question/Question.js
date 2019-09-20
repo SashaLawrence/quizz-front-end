@@ -12,14 +12,14 @@ const line_design = {
     marginBottom: "2em"
 };
 
-const renderer = ({ minutes, seconds, completed }) => {
+const renderer = ({ seconds, completed }) => {
     
     if (completed) {
         // Render a completed state
         return <span>Done!</span>;
     } else {
         // Render a countdown
-        return <span>{ minutes }:{ seconds }</span>;
+        return <span>{ seconds }</span>;
     }
 };
 
