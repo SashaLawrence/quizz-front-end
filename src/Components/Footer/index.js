@@ -8,8 +8,8 @@ import { getQuestion } from "../../data/actions/api";
 // to any other props being passed in
 let mapStateToProps = ({ selected, correctAnswer }) => {
     return {
-        selected,
-        correctAnswer,
+        selected: selected,
+        correctAnswer: 
     }
 };
 

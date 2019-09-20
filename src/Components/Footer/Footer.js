@@ -4,15 +4,11 @@ const unselected = {
     backgroundColor: "#cbdce6"
     }
 
+const Footer = ({ quiz, qcounter, handleClick, selected }) => (
 
-
-const Footer = ({ quiz, qcounter, handleClick, selected, correctAnswer }) => {
-    
-
-    return (
-        
-        <div className="d-flex justify-content-between mb-4">
-            <p className="text-success">Correct</p>
+     <div className="d-flex justify-content-between mb-4">
+        <p className="text-success">Correct</p>
+        { selected === 0 ? null :
             <button
                 style={ unselected }
                 type="button"
@@ -22,8 +18,8 @@ const Footer = ({ quiz, qcounter, handleClick, selected, correctAnswer }) => {
                 qcounter={ qcounter }
                 // test comment 
             >Next</button>
-        </div>
+        }
+    </div>
+);
 
-    )
-}
-  export default Footer;
+export default Footer;
