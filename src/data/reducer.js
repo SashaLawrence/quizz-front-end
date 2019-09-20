@@ -38,7 +38,6 @@ const incrementScore = state => ({
     score: state.correctAnswer === state.selected ? state.score + 1 : state.score,
 });
 
-
 const reducer = (state, action) => {
     switch (action.type) {
         case "start": return start(state, action);
