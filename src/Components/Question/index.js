@@ -7,10 +7,11 @@ import { timesUp } from "../../data/actions/actions";
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-let mapStateToProps = ({ current, qcounter }) => {
+let mapStateToProps = ({ current, qcounter, selected }) => {
     return {
         question: current.question.question, 
         counter: qcounter,
+        selected: selected,
     }
 };
 

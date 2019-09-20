@@ -12,7 +12,9 @@ const line_design = {
     marginBottom: "2em"
 };
 
-const renderer = ({ seconds, milliseconds, completed }) => {
+const renderer = ({ seconds, milliseconds, completed, api }) => {
+    console.log(api);
+    
     if (completed) {
         // Render a completed state
         return <span>Done!</span>;
@@ -22,7 +24,7 @@ const renderer = ({ seconds, milliseconds, completed }) => {
     }
 };
 
-const Question = ({ question, counter, timesUp }) => (
+const Question = ({ question, counter, timesUp, selected }) => (
 
     // map over the quiz array
     // Send GET request for first item (eg. question id 1)
@@ -31,11 +33,15 @@ const Question = ({ question, counter, timesUp }) => (
         <div className="d-flex justify-content-between">
             <h5>{ counter }/20</h5>
             <h5>
-                <Countdown
-                    date={ Date.now() + 10000 }
-                    renderer={ renderer }
-                    onComplete={ timesUp }
-                />
+                {
+                    selected ? null :
+                        <Countdown
+                            date={ Date.now() + 10000 }
+                            renderer={ renderer }
+                            onComplete={ timesUp }
+                        />
+                }
+                
             </h5>
 
         </div>
