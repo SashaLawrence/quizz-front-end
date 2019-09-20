@@ -12,8 +12,7 @@ const line_design = {
     marginBottom: "2em"
 };
 
-const renderer = ({ seconds, milliseconds, completed, api }) => {
-    console.log(api);
+const renderer = ({ seconds, milliseconds, completed }) => {
     
     if (completed) {
         // Render a completed state
@@ -31,7 +30,7 @@ const Question = ({ question, counter, timesUp, selected }) => (
 
     <div style={ font_color } className="mt-5 mb-4">
         <div className="d-flex justify-content-between">
-            <h5>{ counter }/20</h5>
+            <h5>{ counter }/15</h5>
             <h5>
                 {
                     selected ? null :
