@@ -5,25 +5,30 @@ class Answer extends Component {
     render() {
         let { handleClick, value, correct, selected, id, timeout } = this.props;
         const answerSelected = selected === id;
-        const style = {}
+        const style = {
+            maxWidth: "500px",
+            margin: "20px auto",
+            fontSize: "16px",
+            border: "3px solid #7ca7d6"
+        }
 
         if (selected === null) {
             style.backgroundColor = "#cbdce6";
         } else if (answerSelected && correct) {
-            style.backgroundColor = "#e78230";
-            style.border = "4px solid green";
+            style.backgroundColor = "rgb(205, 241, 191)";
+            style.border = "4px solid #44a744";
         } else if (answerSelected && !correct) {
-            style.border = "4px solid red";
-            style.backgroundColor = "#cbdce6";
+            style.border = "4px solid #f13434";
+            style.backgroundColor = "#f5c7c6";
         } else if (selected > 0 && correct) {
-            style.backgroundColor = "#e78230";
-            style.border = "4px solid green";
+            style.backgroundColor = "rgb(205, 241, 191)";
+            style.border = "4px solid #44a744";
         } else if (timeout && correct) {
-            style.backgroundColor = "#e78230";
-            style.border = "4px solid green";
+            style.backgroundColor = "rgb(205, 241, 191)";
+            style.border = "4px solid #44a744";
         } else if (timeout && !correct) {
-            style.border = "4px solid red";
-            style.backgroundColor = "#cbdce6";
+            style.border = "4px solid #f13434";
+            style.backgroundColor = "#f5c7c6";
         } else {
             style.backgroundColor = "#cbdce6";
         };

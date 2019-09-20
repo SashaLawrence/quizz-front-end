@@ -9,17 +9,22 @@ const font_color = {
 const line_design = {
     borderTop: "1px solid #e5ebeb",
     marginTop: "0px",
-    marginBottom: "2em"
+    marginBottom: "2em",
 };
 
-const renderer = ({ seconds, completed }) => {
+const question_style = {
+    textAlign: "center",
+};
+
+const renderer = ({ minutes, seconds, completed }) => {
+
     
     if (completed) {
         // Render a completed state
         return <span>Done!</span>;
     } else {
         // Render a countdown
-        return <span>{ seconds }</span>;
+        return <span>{ minutes }:{ `${seconds}`.padStart(2, '0') }</span>;
     }
 };
 
@@ -45,7 +50,7 @@ const Question = ({ question, counter, timesUp, selected }) => (
 
         </div>
         <hr style={ line_design }></hr>
-        <p>{ question }</p>
+        <p style={ question_style }>{ question }</p>
     </div>
 )
 
