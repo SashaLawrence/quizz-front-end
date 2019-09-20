@@ -12,8 +12,7 @@ const line_design = {
     marginBottom: "2em"
 };
 
-const renderer = ({ seconds, milliseconds, completed, api }) => {
-    console.log(api);
+const renderer = ({ seconds, milliseconds, completed }) => {
     
     if (completed) {
         // Render a completed state
