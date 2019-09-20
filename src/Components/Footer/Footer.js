@@ -11,7 +11,10 @@ const Footer = ({ quiz, qcounter, handleClick, selected, correctAnswer, timeout 
 
     return (
      <div className="d-flex justify-content-between mb-4 mt-5">
-       { selected === 0 ? null : <p className={ checker ? "text-success" : "text-danger" }>{ checker ? "Genius! Well done!" : "Oops! Incorrect" }</p>}
+       { selected === 0 ? null : 
+       <p className={ checker ? "text-success" : "text-danger" }>
+       { checker ? "Genius! Well done!" : timeout ? "Oops! Out of time!" :
+        "Oops! Incorrect" }</p>}
         { selected === 0 ? null :
             <button
                 style={ unselected }
