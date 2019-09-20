@@ -26,3 +26,9 @@ export const save = (question, answers) => {
      }
  }
 
+export const timesUp = () => {
+    return {
+        type: "timesUp",
+     }
+ }
+

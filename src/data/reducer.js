@@ -38,12 +38,19 @@ const incrementScore = state => ({
     score: state.correctAnswer === state.selected ? state.score + 1 : state.score,
 });
 
+const timesUp = state => ({
+    ...state,
+    timeout: true,
+    selected: true,
+});
+
 const reducer = (state, action) => {
     switch (action.type) {
         case "start": return start(state, action);
         // case "next": return next(state, action);
         case "save": return save(state, action);
         case "selectedAnswer": return incrementScore(correctAnswer(selectedAnswer(state, action)));
+        case "timesUp": return timesUp(state);
         default: return state;
     }
 };

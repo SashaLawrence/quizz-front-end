@@ -10,7 +10,7 @@ import Complete from "../Complete";
 let Quiz = ( {counter} ) => console.log(counter) || (
 
     <>
-        { counter > 2 ? <Complete /> : 
+        { counter > 10 ? <Complete /> : 
         <> 
             <Question />
             <Answers />

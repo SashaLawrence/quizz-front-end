@@ -31,7 +31,7 @@ let Complete = ( {score, counter} ) => (
         <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
             <img src={ trophy } alt="Trophy" style={ imageSize } />
             <h4>Congratulations!</h4>
-            <h1 style={ score_color }>{ score }/20</h1>
+            <h1 style={ score_color }>{ score }/{ counter }</h1>
             <h5>Quiz completed successfully</h5>
             <br></br>
             

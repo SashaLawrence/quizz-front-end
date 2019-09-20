@@ -6,11 +6,12 @@ import { selectedAnswer } from "../../data/actions/actions"
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-let mapStateToProps = ({ current, selected, correctAnswer }) => {
+let mapStateToProps = ({ current, selected, correctAnswer, timeout }) => {
     return {
         answers: current.answers,
         selected: selected,
         correctAnswer: correctAnswer,
+        timeout: timeout,
     }
 };
 
