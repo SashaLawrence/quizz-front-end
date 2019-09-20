@@ -30,17 +30,18 @@ class Answers extends Component {
 
         return (
             <div className="col-xs-6" style={ marginB }>
-                { answers.map((answer) =>
-                     <Answer 
-                     key={ answer.id }
-                     id={ answer.id }
-                     value={ answer.answer }
-                     correct= { answer.correct }
-                     handleClick ={() => this.props.handleClick(answer.id) }
-                     selected = { this.state.selected }
-                     
-                     />
-                )}
+                {/* {
+                    answers.map((answer) =>
+                        <Answer 
+                            key={ answer.id }
+                            id={ answer.id }
+                            value={ answer.answer }
+                            correct= { answer.correct }
+                            handleClick ={() => this.props.handleClick(answer.id) }
+                            selected = { this.state.selected }
+                        />
+                    )
+                } */}
             </div>
     
         )

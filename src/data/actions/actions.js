@@ -1,8 +1,10 @@
-// export const save = ( {id} ) => {
-//     return {
-//       quiz: id,
-//     };
-//  };
+export const save = (question, answers) => {
+    return {
+        type: "save",
+        question,
+        answers,
+    };
+ };
 
  export const start = values => {
     return {
