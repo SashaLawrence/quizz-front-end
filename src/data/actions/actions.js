@@ -19,9 +19,10 @@ export const save = (question, answers) => {
      }
  }
 
- export const selectAnswer = (id) => {
+ export const selectedAnswer = (id) => {
      return {
-         type: "selectAnswer",
-         selected: id
+         type: "selectedAnswer",
+         id,
      }
  }
+
