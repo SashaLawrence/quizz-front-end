@@ -11,7 +11,7 @@ const imageSize = {
 
 const congrats_box = {
     backgroundColor: "#cbdce6",
-    height: "70vh",
+    height: "100vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -28,7 +28,7 @@ const score_color = {
 
 let Complete = ( {score, counter} ) => (
     <>
-        <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
+        <div style={ congrats_box  } className="rounded-lg d-flex">
             <img src={ trophy } alt="Trophy" style={ imageSize } />
             <h4>Congratulations!</h4>
             <h1 style={ score_color }>{ score }/{ counter }</h1>

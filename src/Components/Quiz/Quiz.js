@@ -11,7 +11,7 @@ import Header from '../Header';
 let Quiz = ( {counter} ) => (
 
     <>
-        { counter > 15 ? <Complete /> : 
+        { counter >= 15 ? <Complete /> : 
         <> 
             <Header />
             <Question />
