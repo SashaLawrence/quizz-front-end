@@ -1,17 +1,36 @@
-import { connect } from "react-redux";
-import Answer from './Answer';
-import { incrementScore } from "../../data/actions/actions";
+import React, { Component } from "react";
 
-let mapStateToProps = ( state ) => {
-    return {
+class Answer extends Component {
 
+    render() {
+        let { handleClick, value, correct, selected, id } = this.props;
+        const answerSelected = selected === id;
+        const style = {}
+
+        if (selected === null) {
+            style.backgroundColor = "#cbdce6";
+        } else if (answerSelected && correct) {
+            style.backgroundColor = "#e78230";
+            style.border = "4px solid green";
+        } else if (answerSelected && !correct) {
+            style.border = "4px solid red";
+            style.backgroundColor = "#cbdce6";
+        } else if (selected > 0 && correct) {
+            style.backgroundColor = "#e78230";
+            style.border = "4px solid green";
+        } else {
+            style.backgroundColor = "#cbdce6";
+        }
+
+        return (
+            <button
+                onClick={ handleClick }
+                style={ style }
+                type="button"
+                className="btn btn-rounded rounded-pill btn-block btn-lg">{ value }
+            </button>
+        )
     }
-};
+}
 
-let mapDispatchToProps = ( dispatch ) => {
-    return {
-    incrementScore: () => dispatch(incrementScore())
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Answer)
+export default Answer;

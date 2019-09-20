@@ -1,8 +1,10 @@
-// export const save = ( {id} ) => {
-//     return {
-//       quiz: id,
-//     };
-//  };
+export const save = (question, answers) => {
+    return {
+        type: "save",
+        question,
+        answers,
+    };
+ };
 
  export const start = values => {
     return {
@@ -17,9 +19,10 @@
      }
  }
 
- export const selectAnswer = (id) => {
+ export const selectedAnswer = (id) => {
      return {
-         type: "selectAnswer",
-         selected: id
+         type: "selectedAnswer",
+         id,
      }
  }
+

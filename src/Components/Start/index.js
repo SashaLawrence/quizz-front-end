@@ -2,11 +2,11 @@ import { connect } from "react-redux"; // this allows us to interact with the st
 import Start from "./Start";
 import { startQuiz } from "../../data/actions/api";
 
-let mapStateToProps = (state) => {
-    return {
+// let mapStateToProps = (state) => {
+//     return {
    
-    }
-};
+//     }
+// };
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -14,4 +14,4 @@ let mapDispatchToProps = (dispatch) => {
     }
 };
  
-export default connect(mapStateToProps, mapDispatchToProps)(Start);
+export default connect(null, mapDispatchToProps)(Start);
