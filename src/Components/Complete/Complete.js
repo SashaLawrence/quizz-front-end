@@ -34,7 +34,6 @@ let Complete = ( {score, counter} ) => (
             <h1 style={ score_color }>{ score }/{ counter }</h1>
             <h5>Quiz completed successfully</h5>
             <br></br>
-            
             <p>You attempted <b>{ counter } questions</b> and answered <span style={ score_color }>{ score } correctly!</span></p>
 
         </div>
