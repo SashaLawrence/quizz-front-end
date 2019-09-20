@@ -9,7 +9,7 @@ import { getQuestion } from "../../data/actions/api";
 let mapStateToProps = ({ selected, correctAnswer }) => {
     return {
         selected: selected,
-        correctAnswer: 
+        correctAnswer: correctAnswer,
     }
 };
 

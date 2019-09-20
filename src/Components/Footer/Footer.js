@@ -4,10 +4,18 @@ const unselected = {
     backgroundColor: "#cbdce6"
     }
 
-const Footer = ({ quiz, qcounter, handleClick, selected }) => (
+const Footer = ({ quiz, qcounter, handleClick, selected, correctAnswer }) => {
 
-     <div className="d-flex justify-content-between mb-4">
-        <p className="text-success">Correct</p>
+
+    const checker = selected === correctAnswer;
+    
+    
+
+
+
+    return (
+     <div className="d-flex justify-content-between mb-4 mt-5">
+       { selected === 0 ? null : <p className={ checker ? "text-success" : "text-danger" }>{ checker ? "Genius! Well done!" : "Oops! Incorrect" }</p>}
         { selected === 0 ? null :
             <button
                 style={ unselected }
@@ -20,6 +28,7 @@ const Footer = ({ quiz, qcounter, handleClick, selected }) => (
             >Next</button>
         }
     </div>
-);
+    )
+};
 
 export default Footer;
