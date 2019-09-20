@@ -5,10 +5,10 @@ import Question from "./Question";
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-let mapStateToProps = ({ current }) => {
-    console.log(current.question.question);
+let mapStateToProps = ({ current, timeout }) => {
     return {
         question: current.question.question, 
+        timeout: timeout,
     }
 };
 

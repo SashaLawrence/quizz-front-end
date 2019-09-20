@@ -6,6 +6,7 @@ const initial = {
     start: false,
     score: 0,
     correctAnswer: null,
+    timeout: false,
 };
 
 export default initial;
