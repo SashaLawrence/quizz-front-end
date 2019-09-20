@@ -11,9 +11,10 @@ const save = (state, { question, answers }) => ({
         answers: answers,
     },
     qcounter: state.qcounter + 1,
-    selected: state.selected = 0,
-    correctAnswer: state.correctAnswer = null,
+    selected: 0,
+    correctAnswer: null,
     start: true,
+    timeout: false,
 });
 
 // const next = state => ({
