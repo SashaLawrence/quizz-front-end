@@ -6,9 +6,9 @@ import Question from "./Question";
 // needs to return an object literal which gets merged in
 // to any other props being passed in
 let mapStateToProps = ({ current }) => {
-    console.log(current.question);
+    console.log(current.question.question);
     return {
-        // question: current.question.question, 
+        question: current.question.question, 
     }
 };
 

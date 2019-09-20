@@ -22,7 +22,7 @@ const Question = ({ question }) => (
 
         </div>
         <hr style={ line_design }></hr>
-        {/* <p>{ question.question }</p> */}
+        <p>{ question }</p>
     </div>
 )
 

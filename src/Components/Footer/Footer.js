@@ -15,6 +15,7 @@ const Footer = ({ quiz, qcounter, handleClick }) => (
             onClick={ handleClick }
             quiz={ quiz }
             qcounter={ qcounter }
+            // test comment 
         >Next</button>
     </div>
 

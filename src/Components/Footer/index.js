@@ -6,11 +6,12 @@ import { getQuestion } from "../../data/actions/api";
 // to the props that get passed into the wrapped component
 // needs to return an object literal which gets merged in
 // to any other props being passed in
-// let mapStateToProps = (state) => {
-//     return {
-
-//     }
-// };
+let mapStateToProps = ({ selected, correctAnswer }) => {
+    return {
+        selected,
+        correctAnswer,
+    }
+};
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -18,4 +19,4 @@ let mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(null, mapDispatchToProps)(Footer);
+export default connect(mapStateToProps, mapDispatchToProps)(Footer);
