@@ -1,5 +1,5 @@
 import React from "react";
-import Answer from'../Answer/Answer';
+import Answer from "../Answer";
 
 let Answers = ({ answers, handleClick, selected, correctAnswer }) => (
     <div className="col-xs-6">
