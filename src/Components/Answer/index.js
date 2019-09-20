@@ -18,10 +18,10 @@ class Answer extends Component {
         } else if (selected > 0 && correct) {
             style.backgroundColor = "#e78230";
             style.border = "4px solid green";
-        } else if (timeout && correct) {
+        } else if (timeout && correct && !selected) {
             style.backgroundColor = "#e78230";
             style.border = "4px solid green";
-        } else if (timeout && !correct) {
+        } else if (timeout && !correct && !selected) {
             style.border = "4px solid red";
             style.backgroundColor = "#cbdce6";
         } else {
