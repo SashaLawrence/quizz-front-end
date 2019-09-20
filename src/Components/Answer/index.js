@@ -1,4 +1,4 @@
-import { connect } from "react-redux";
+git import { connect } from "react-redux";
 import Answer from './Answer';
 
 
