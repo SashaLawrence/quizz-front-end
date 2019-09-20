@@ -15,7 +15,7 @@ const congrats_box = {
 const Start = ( { startQuiz } ) => (
 
     <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
-        <button onClick={ startQuiz  }className="btn btn-danger rounded-pill">Start Quiz</button>
+        <button onClick={ startQuiz } className="btn btn-danger rounded-pill">Start Quiz</button>
     </div>
 );
 

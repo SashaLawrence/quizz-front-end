@@ -4,6 +4,15 @@ const start = (state, { values }) => ({
     quiz: values
 });
 
+const save = (state, { question, answers }) => ({
+    ...state, 
+    current: {
+        ...state.current,
+        question: question,
+        answers: answers,
+    },
+});
+
 const next = state => ({
     ...state,
     qcounter: state.qcounter + 1,
@@ -31,10 +40,10 @@ const reducer = (state, action) => {
     switch (action.type) {
         case "start": return start(state, action);
         case "next": return next(state, action);
+        case "save": return save(state, action);
         case "selectedAnswer": return incrementScore(correctAnswer(selectedAnswer(state, action)));
         default: return state;
     }
 };
-
 
 export default reducer;
