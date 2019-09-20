@@ -32,9 +32,10 @@ const initial = {
         ]
     },
     
-    selected: null,
+    selected: 0,
     start: false,
     score: 0,
+    correctAnswer: null,
 
 };
 

@@ -10,6 +10,8 @@ class Answer extends Component {
         
         const answerSelected = selected === id; 
 
+        console.log(answerSelected, id, selected )
+
         const style = {}
         if (selected === null) {
             style.backgroundColor = "#cbdce6"; 
