@@ -8,10 +8,10 @@ import Header from '../Header';
 //import Complete from "../Complete/Complete";
 
 
-let Quiz = ( {counter} ) => console.log(counter) || (
+let Quiz = ( {counter} ) => (
 
     <>
-        { counter > 10 ? <Complete /> : 
+        { counter > 15 ? <Complete /> : 
         <> 
             <Header />
             <Question />

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import Quiz from'../Quiz';
 import Start from '../Start';
-import Header from '../Header';
+
 
 
 function App( {start} ) {

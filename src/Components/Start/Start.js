@@ -3,7 +3,7 @@ import code_background from "./code_background.svg"
 
 const congrats_box = {
     backgroundColor: "#cbdce6",
-    height: "50vh",
+    height: "100vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -15,16 +15,17 @@ const congrats_box = {
   const imageSize = {
     width: "100%",
     height: "100%",
-    marginBottom: "1em"
+    
 }
 const buttonColour = {
     backgroundColor:"#e78230",
+    marginBottom: "10em",
 }
 
 
 const Start = ( { startQuiz } ) => (
 
-    <div style={ congrats_box  } className="rounded-lg d-flex mt-5">
+    <div style={ congrats_box  } className="rounded-lg d-flex">
         <img src={ code_background } alt="code " style={ imageSize } />
         <button onClick={ startQuiz  } className="btn rounded-pill" style = { buttonColour } >Start Quiz</button>
     </div>
