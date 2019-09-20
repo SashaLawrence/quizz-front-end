@@ -29,7 +29,7 @@ const Question = ({ question, counter, timesUp }) => (
 
     <div style={ font_color } className="mt-5 mb-4">
         <div className="d-flex justify-content-between">
-            <h5>{ counter }/20</h5>
+            <h5>{ counter }/15</h5>
             <h5>
                 <Countdown
                     date={ Date.now() + 10000 }
