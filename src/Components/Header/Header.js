@@ -6,7 +6,7 @@ color: '#e5ebeb',
 
 const header_background_color ={
 backgroundColor: "#2d4158",
-margin: "0 -15px"
+margin: "0"
 }
 
 const Header = ( {category} ) => (

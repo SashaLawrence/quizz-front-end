@@ -3,7 +3,7 @@ import code_background from "./code_background.svg"
 
 const congrats_box = {
     backgroundColor: "#cbdce6",
-    height: "100vh",
+    height: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

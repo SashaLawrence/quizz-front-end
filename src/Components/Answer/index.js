@@ -9,7 +9,9 @@ class Answer extends Component {
             maxWidth: "500px",
             margin: "20px auto",
             fontSize: "16px",
-            border: "3px solid #7ca7d6"
+            border: "3px solid #7ca7d6",
+            whiteSpace: "normal",
+            wordWrap: "break-word",
         }
 
         if (selected === null) {
